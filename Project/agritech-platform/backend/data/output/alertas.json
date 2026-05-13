@@ -1,0 +1,902 @@
+[
+  {
+    "id_alerta": 221,
+    "parcela_id": "P001",
+    "tipo_alerta": "humedad_critica",
+    "mensaje": "Humedad 0% - Riesgo de marchitez en Parcela Norte A. Riego urgente.",
+    "prioridad": "alta",
+    "fecha_alerta": "2025-12-31",
+    "atendida": true
+  },
+  {
+    "id_alerta": 537,
+    "parcela_id": "P002",
+    "tipo_alerta": "humedad_critica",
+    "mensaje": "Humedad 0% - Riesgo de marchitez en Parcela Sur B. Riego urgente.",
+    "prioridad": "alta",
+    "fecha_alerta": "2025-12-31",
+    "atendida": true
+  },
+  {
+    "id_alerta": 851,
+    "parcela_id": "P003",
+    "tipo_alerta": "humedad_critica",
+    "mensaje": "Humedad 0% - Riesgo de marchitez en Parcela Central C. Riego urgente.",
+    "prioridad": "alta",
+    "fecha_alerta": "2025-12-31",
+    "atendida": true
+  },
+  {
+    "id_alerta": 1130,
+    "parcela_id": "P004",
+    "tipo_alerta": "humedad_critica",
+    "mensaje": "Humedad 0% - Riesgo de marchitez en Bloque Este D. Riego urgente.",
+    "prioridad": "alta",
+    "fecha_alerta": "2025-12-31",
+    "atendida": true
+  },
+  {
+    "id_alerta": 1323,
+    "parcela_id": "P005",
+    "tipo_alerta": "humedad_critica",
+    "mensaje": "Humedad 0% - Riesgo de marchitez en Bloque Oeste E. Riego urgente.",
+    "prioridad": "alta",
+    "fecha_alerta": "2025-12-31",
+    "atendida": true
+  },
+  {
+    "id_alerta": 220,
+    "parcela_id": "P001",
+    "tipo_alerta": "humedad_critica",
+    "mensaje": "Humedad 0% - Riesgo de marchitez en Parcela Norte A. Riego urgente.",
+    "prioridad": "alta",
+    "fecha_alerta": "2025-12-30",
+    "atendida": true
+  },
+  {
+    "id_alerta": 536,
+    "parcela_id": "P002",
+    "tipo_alerta": "humedad_critica",
+    "mensaje": "Humedad 0% - Riesgo de marchitez en Parcela Sur B. Riego urgente.",
+    "prioridad": "alta",
+    "fecha_alerta": "2025-12-30",
+    "atendida": false
+  },
+  {
+    "id_alerta": 850,
+    "parcela_id": "P003",
+    "tipo_alerta": "humedad_critica",
+    "mensaje": "Humedad 0% - Riesgo de marchitez en Parcela Central C. Riego urgente.",
+    "prioridad": "alta",
+    "fecha_alerta": "2025-12-30",
+    "atendida": false
+  },
+  {
+    "id_alerta": 1129,
+    "parcela_id": "P004",
+    "tipo_alerta": "humedad_critica",
+    "mensaje": "Humedad 0% - Riesgo de marchitez en Bloque Este D. Riego urgente.",
+    "prioridad": "alta",
+    "fecha_alerta": "2025-12-30",
+    "atendida": true
+  },
+  {
+    "id_alerta": 1322,
+    "parcela_id": "P005",
+    "tipo_alerta": "humedad_critica",
+    "mensaje": "Humedad 0% - Riesgo de marchitez en Bloque Oeste E. Riego urgente.",
+    "prioridad": "alta",
+    "fecha_alerta": "2025-12-30",
+    "atendida": false
+  },
+  {
+    "id_alerta": 219,
+    "parcela_id": "P001",
+    "tipo_alerta": "humedad_critica",
+    "mensaje": "Humedad 0% - Riesgo de marchitez en Parcela Norte A. Riego urgente.",
+    "prioridad": "alta",
+    "fecha_alerta": "2025-12-29",
+    "atendida": true
+  },
+  {
+    "id_alerta": 535,
+    "parcela_id": "P002",
+    "tipo_alerta": "humedad_critica",
+    "mensaje": "Humedad 0% - Riesgo de marchitez en Parcela Sur B. Riego urgente.",
+    "prioridad": "alta",
+    "fecha_alerta": "2025-12-29",
+    "atendida": false
+  },
+  {
+    "id_alerta": 849,
+    "parcela_id": "P003",
+    "tipo_alerta": "humedad_critica",
+    "mensaje": "Humedad 0% - Riesgo de marchitez en Parcela Central C. Riego urgente.",
+    "prioridad": "alta",
+    "fecha_alerta": "2025-12-29",
+    "atendida": true
+  },
+  {
+    "id_alerta": 1128,
+    "parcela_id": "P004",
+    "tipo_alerta": "humedad_critica",
+    "mensaje": "Humedad 0% - Riesgo de marchitez en Bloque Este D. Riego urgente.",
+    "prioridad": "alta",
+    "fecha_alerta": "2025-12-29",
+    "atendida": true
+  },
+  {
+    "id_alerta": 1321,
+    "parcela_id": "P005",
+    "tipo_alerta": "humedad_critica",
+    "mensaje": "Humedad 0% - Riesgo de marchitez en Bloque Oeste E. Riego urgente.",
+    "prioridad": "alta",
+    "fecha_alerta": "2025-12-29",
+    "atendida": true
+  },
+  {
+    "id_alerta": 218,
+    "parcela_id": "P001",
+    "tipo_alerta": "humedad_critica",
+    "mensaje": "Humedad 0% - Riesgo de marchitez en Parcela Norte A. Riego urgente.",
+    "prioridad": "alta",
+    "fecha_alerta": "2025-12-28",
+    "atendida": true
+  },
+  {
+    "id_alerta": 534,
+    "parcela_id": "P002",
+    "tipo_alerta": "humedad_critica",
+    "mensaje": "Humedad 0% - Riesgo de marchitez en Parcela Sur B. Riego urgente.",
+    "prioridad": "alta",
+    "fecha_alerta": "2025-12-28",
+    "atendida": false
+  },
+  {
+    "id_alerta": 848,
+    "parcela_id": "P003",
+    "tipo_alerta": "humedad_critica",
+    "mensaje": "Humedad 0% - Riesgo de marchitez en Parcela Central C. Riego urgente.",
+    "prioridad": "alta",
+    "fecha_alerta": "2025-12-28",
+    "atendida": true
+  },
+  {
+    "id_alerta": 1127,
+    "parcela_id": "P004",
+    "tipo_alerta": "humedad_critica",
+    "mensaje": "Humedad 0% - Riesgo de marchitez en Bloque Este D. Riego urgente.",
+    "prioridad": "alta",
+    "fecha_alerta": "2025-12-28",
+    "atendida": false
+  },
+  {
+    "id_alerta": 1320,
+    "parcela_id": "P005",
+    "tipo_alerta": "humedad_critica",
+    "mensaje": "Humedad 0% - Riesgo de marchitez en Bloque Oeste E. Riego urgente.",
+    "prioridad": "alta",
+    "fecha_alerta": "2025-12-28",
+    "atendida": true
+  },
+  {
+    "id_alerta": 217,
+    "parcela_id": "P001",
+    "tipo_alerta": "humedad_critica",
+    "mensaje": "Humedad 0% - Riesgo de marchitez en Parcela Norte A. Riego urgente.",
+    "prioridad": "alta",
+    "fecha_alerta": "2025-12-27",
+    "atendida": true
+  },
+  {
+    "id_alerta": 533,
+    "parcela_id": "P002",
+    "tipo_alerta": "humedad_critica",
+    "mensaje": "Humedad 0% - Riesgo de marchitez en Parcela Sur B. Riego urgente.",
+    "prioridad": "alta",
+    "fecha_alerta": "2025-12-27",
+    "atendida": false
+  },
+  {
+    "id_alerta": 847,
+    "parcela_id": "P003",
+    "tipo_alerta": "humedad_critica",
+    "mensaje": "Humedad 0% - Riesgo de marchitez en Parcela Central C. Riego urgente.",
+    "prioridad": "alta",
+    "fecha_alerta": "2025-12-27",
+    "atendida": true
+  },
+  {
+    "id_alerta": 1126,
+    "parcela_id": "P004",
+    "tipo_alerta": "humedad_critica",
+    "mensaje": "Humedad 0% - Riesgo de marchitez en Bloque Este D. Riego urgente.",
+    "prioridad": "alta",
+    "fecha_alerta": "2025-12-27",
+    "atendida": true
+  },
+  {
+    "id_alerta": 1319,
+    "parcela_id": "P005",
+    "tipo_alerta": "humedad_critica",
+    "mensaje": "Humedad 0% - Riesgo de marchitez en Bloque Oeste E. Riego urgente.",
+    "prioridad": "alta",
+    "fecha_alerta": "2025-12-27",
+    "atendida": false
+  },
+  {
+    "id_alerta": 216,
+    "parcela_id": "P001",
+    "tipo_alerta": "humedad_critica",
+    "mensaje": "Humedad 0% - Riesgo de marchitez en Parcela Norte A. Riego urgente.",
+    "prioridad": "alta",
+    "fecha_alerta": "2025-12-26",
+    "atendida": true
+  },
+  {
+    "id_alerta": 532,
+    "parcela_id": "P002",
+    "tipo_alerta": "humedad_critica",
+    "mensaje": "Humedad 0% - Riesgo de marchitez en Parcela Sur B. Riego urgente.",
+    "prioridad": "alta",
+    "fecha_alerta": "2025-12-26",
+    "atendida": false
+  },
+  {
+    "id_alerta": 846,
+    "parcela_id": "P003",
+    "tipo_alerta": "humedad_critica",
+    "mensaje": "Humedad 0% - Riesgo de marchitez en Parcela Central C. Riego urgente.",
+    "prioridad": "alta",
+    "fecha_alerta": "2025-12-26",
+    "atendida": false
+  },
+  {
+    "id_alerta": 1125,
+    "parcela_id": "P004",
+    "tipo_alerta": "humedad_critica",
+    "mensaje": "Humedad 0% - Riesgo de marchitez en Bloque Este D. Riego urgente.",
+    "prioridad": "alta",
+    "fecha_alerta": "2025-12-26",
+    "atendida": true
+  },
+  {
+    "id_alerta": 1318,
+    "parcela_id": "P005",
+    "tipo_alerta": "humedad_critica",
+    "mensaje": "Humedad 0% - Riesgo de marchitez en Bloque Oeste E. Riego urgente.",
+    "prioridad": "alta",
+    "fecha_alerta": "2025-12-26",
+    "atendida": false
+  },
+  {
+    "id_alerta": 215,
+    "parcela_id": "P001",
+    "tipo_alerta": "humedad_critica",
+    "mensaje": "Humedad 0% - Riesgo de marchitez en Parcela Norte A. Riego urgente.",
+    "prioridad": "alta",
+    "fecha_alerta": "2025-12-25",
+    "atendida": true
+  },
+  {
+    "id_alerta": 531,
+    "parcela_id": "P002",
+    "tipo_alerta": "humedad_critica",
+    "mensaje": "Humedad 0% - Riesgo de marchitez en Parcela Sur B. Riego urgente.",
+    "prioridad": "alta",
+    "fecha_alerta": "2025-12-25",
+    "atendida": false
+  },
+  {
+    "id_alerta": 845,
+    "parcela_id": "P003",
+    "tipo_alerta": "humedad_critica",
+    "mensaje": "Humedad 0% - Riesgo de marchitez en Parcela Central C. Riego urgente.",
+    "prioridad": "alta",
+    "fecha_alerta": "2025-12-25",
+    "atendida": true
+  },
+  {
+    "id_alerta": 1124,
+    "parcela_id": "P004",
+    "tipo_alerta": "humedad_critica",
+    "mensaje": "Humedad 0% - Riesgo de marchitez en Bloque Este D. Riego urgente.",
+    "prioridad": "alta",
+    "fecha_alerta": "2025-12-25",
+    "atendida": false
+  },
+  {
+    "id_alerta": 1317,
+    "parcela_id": "P005",
+    "tipo_alerta": "humedad_critica",
+    "mensaje": "Humedad 0% - Riesgo de marchitez en Bloque Oeste E. Riego urgente.",
+    "prioridad": "alta",
+    "fecha_alerta": "2025-12-25",
+    "atendida": true
+  },
+  {
+    "id_alerta": 214,
+    "parcela_id": "P001",
+    "tipo_alerta": "humedad_critica",
+    "mensaje": "Humedad 0% - Riesgo de marchitez en Parcela Norte A. Riego urgente.",
+    "prioridad": "alta",
+    "fecha_alerta": "2025-12-24",
+    "atendida": false
+  },
+  {
+    "id_alerta": 530,
+    "parcela_id": "P002",
+    "tipo_alerta": "humedad_critica",
+    "mensaje": "Humedad 0% - Riesgo de marchitez en Parcela Sur B. Riego urgente.",
+    "prioridad": "alta",
+    "fecha_alerta": "2025-12-24",
+    "atendida": true
+  },
+  {
+    "id_alerta": 844,
+    "parcela_id": "P003",
+    "tipo_alerta": "humedad_critica",
+    "mensaje": "Humedad 0% - Riesgo de marchitez en Parcela Central C. Riego urgente.",
+    "prioridad": "alta",
+    "fecha_alerta": "2025-12-24",
+    "atendida": false
+  },
+  {
+    "id_alerta": 1123,
+    "parcela_id": "P004",
+    "tipo_alerta": "humedad_critica",
+    "mensaje": "Humedad 0% - Riesgo de marchitez en Bloque Este D. Riego urgente.",
+    "prioridad": "alta",
+    "fecha_alerta": "2025-12-24",
+    "atendida": false
+  },
+  {
+    "id_alerta": 1316,
+    "parcela_id": "P005",
+    "tipo_alerta": "humedad_critica",
+    "mensaje": "Humedad 0% - Riesgo de marchitez en Bloque Oeste E. Riego urgente.",
+    "prioridad": "alta",
+    "fecha_alerta": "2025-12-24",
+    "atendida": false
+  },
+  {
+    "id_alerta": 213,
+    "parcela_id": "P001",
+    "tipo_alerta": "humedad_critica",
+    "mensaje": "Humedad 0% - Riesgo de marchitez en Parcela Norte A. Riego urgente.",
+    "prioridad": "alta",
+    "fecha_alerta": "2025-12-23",
+    "atendida": false
+  },
+  {
+    "id_alerta": 529,
+    "parcela_id": "P002",
+    "tipo_alerta": "humedad_critica",
+    "mensaje": "Humedad 0% - Riesgo de marchitez en Parcela Sur B. Riego urgente.",
+    "prioridad": "alta",
+    "fecha_alerta": "2025-12-23",
+    "atendida": false
+  },
+  {
+    "id_alerta": 843,
+    "parcela_id": "P003",
+    "tipo_alerta": "humedad_critica",
+    "mensaje": "Humedad 0% - Riesgo de marchitez en Parcela Central C. Riego urgente.",
+    "prioridad": "alta",
+    "fecha_alerta": "2025-12-23",
+    "atendida": true
+  },
+  {
+    "id_alerta": 1122,
+    "parcela_id": "P004",
+    "tipo_alerta": "humedad_critica",
+    "mensaje": "Humedad 0% - Riesgo de marchitez en Bloque Este D. Riego urgente.",
+    "prioridad": "alta",
+    "fecha_alerta": "2025-12-23",
+    "atendida": false
+  },
+  {
+    "id_alerta": 1315,
+    "parcela_id": "P005",
+    "tipo_alerta": "humedad_critica",
+    "mensaje": "Humedad 0% - Riesgo de marchitez en Bloque Oeste E. Riego urgente.",
+    "prioridad": "alta",
+    "fecha_alerta": "2025-12-23",
+    "atendida": true
+  },
+  {
+    "id_alerta": 212,
+    "parcela_id": "P001",
+    "tipo_alerta": "humedad_critica",
+    "mensaje": "Humedad 0% - Riesgo de marchitez en Parcela Norte A. Riego urgente.",
+    "prioridad": "alta",
+    "fecha_alerta": "2025-12-22",
+    "atendida": false
+  },
+  {
+    "id_alerta": 528,
+    "parcela_id": "P002",
+    "tipo_alerta": "humedad_critica",
+    "mensaje": "Humedad 0% - Riesgo de marchitez en Parcela Sur B. Riego urgente.",
+    "prioridad": "alta",
+    "fecha_alerta": "2025-12-22",
+    "atendida": false
+  },
+  {
+    "id_alerta": 842,
+    "parcela_id": "P003",
+    "tipo_alerta": "humedad_critica",
+    "mensaje": "Humedad 0% - Riesgo de marchitez en Parcela Central C. Riego urgente.",
+    "prioridad": "alta",
+    "fecha_alerta": "2025-12-22",
+    "atendida": true
+  },
+  {
+    "id_alerta": 1121,
+    "parcela_id": "P004",
+    "tipo_alerta": "humedad_critica",
+    "mensaje": "Humedad 0% - Riesgo de marchitez en Bloque Este D. Riego urgente.",
+    "prioridad": "alta",
+    "fecha_alerta": "2025-12-22",
+    "atendida": true
+  },
+  {
+    "id_alerta": 1314,
+    "parcela_id": "P005",
+    "tipo_alerta": "humedad_critica",
+    "mensaje": "Humedad 0% - Riesgo de marchitez en Bloque Oeste E. Riego urgente.",
+    "prioridad": "alta",
+    "fecha_alerta": "2025-12-22",
+    "atendida": true
+  },
+  {
+    "id_alerta": 211,
+    "parcela_id": "P001",
+    "tipo_alerta": "humedad_critica",
+    "mensaje": "Humedad 0% - Riesgo de marchitez en Parcela Norte A. Riego urgente.",
+    "prioridad": "alta",
+    "fecha_alerta": "2025-12-21",
+    "atendida": false
+  },
+  {
+    "id_alerta": 527,
+    "parcela_id": "P002",
+    "tipo_alerta": "humedad_critica",
+    "mensaje": "Humedad 0% - Riesgo de marchitez en Parcela Sur B. Riego urgente.",
+    "prioridad": "alta",
+    "fecha_alerta": "2025-12-21",
+    "atendida": true
+  },
+  {
+    "id_alerta": 841,
+    "parcela_id": "P003",
+    "tipo_alerta": "humedad_critica",
+    "mensaje": "Humedad 0% - Riesgo de marchitez en Parcela Central C. Riego urgente.",
+    "prioridad": "alta",
+    "fecha_alerta": "2025-12-21",
+    "atendida": true
+  },
+  {
+    "id_alerta": 1120,
+    "parcela_id": "P004",
+    "tipo_alerta": "humedad_critica",
+    "mensaje": "Humedad 0% - Riesgo de marchitez en Bloque Este D. Riego urgente.",
+    "prioridad": "alta",
+    "fecha_alerta": "2025-12-21",
+    "atendida": true
+  },
+  {
+    "id_alerta": 1313,
+    "parcela_id": "P005",
+    "tipo_alerta": "humedad_critica",
+    "mensaje": "Humedad 0% - Riesgo de marchitez en Bloque Oeste E. Riego urgente.",
+    "prioridad": "alta",
+    "fecha_alerta": "2025-12-21",
+    "atendida": false
+  },
+  {
+    "id_alerta": 210,
+    "parcela_id": "P001",
+    "tipo_alerta": "humedad_critica",
+    "mensaje": "Humedad 0% - Riesgo de marchitez en Parcela Norte A. Riego urgente.",
+    "prioridad": "alta",
+    "fecha_alerta": "2025-12-20",
+    "atendida": false
+  },
+  {
+    "id_alerta": 526,
+    "parcela_id": "P002",
+    "tipo_alerta": "humedad_critica",
+    "mensaje": "Humedad 0% - Riesgo de marchitez en Parcela Sur B. Riego urgente.",
+    "prioridad": "alta",
+    "fecha_alerta": "2025-12-20",
+    "atendida": true
+  },
+  {
+    "id_alerta": 840,
+    "parcela_id": "P003",
+    "tipo_alerta": "humedad_critica",
+    "mensaje": "Humedad 0% - Riesgo de marchitez en Parcela Central C. Riego urgente.",
+    "prioridad": "alta",
+    "fecha_alerta": "2025-12-20",
+    "atendida": true
+  },
+  {
+    "id_alerta": 1119,
+    "parcela_id": "P004",
+    "tipo_alerta": "humedad_critica",
+    "mensaje": "Humedad 0% - Riesgo de marchitez en Bloque Este D. Riego urgente.",
+    "prioridad": "alta",
+    "fecha_alerta": "2025-12-20",
+    "atendida": true
+  },
+  {
+    "id_alerta": 1312,
+    "parcela_id": "P005",
+    "tipo_alerta": "humedad_critica",
+    "mensaje": "Humedad 0% - Riesgo de marchitez en Bloque Oeste E. Riego urgente.",
+    "prioridad": "alta",
+    "fecha_alerta": "2025-12-20",
+    "atendida": true
+  },
+  {
+    "id_alerta": 209,
+    "parcela_id": "P001",
+    "tipo_alerta": "humedad_critica",
+    "mensaje": "Humedad 0% - Riesgo de marchitez en Parcela Norte A. Riego urgente.",
+    "prioridad": "alta",
+    "fecha_alerta": "2025-12-19",
+    "atendida": true
+  },
+  {
+    "id_alerta": 525,
+    "parcela_id": "P002",
+    "tipo_alerta": "humedad_critica",
+    "mensaje": "Humedad 0% - Riesgo de marchitez en Parcela Sur B. Riego urgente.",
+    "prioridad": "alta",
+    "fecha_alerta": "2025-12-19",
+    "atendida": true
+  },
+  {
+    "id_alerta": 839,
+    "parcela_id": "P003",
+    "tipo_alerta": "humedad_critica",
+    "mensaje": "Humedad 0% - Riesgo de marchitez en Parcela Central C. Riego urgente.",
+    "prioridad": "alta",
+    "fecha_alerta": "2025-12-19",
+    "atendida": true
+  },
+  {
+    "id_alerta": 1118,
+    "parcela_id": "P004",
+    "tipo_alerta": "humedad_critica",
+    "mensaje": "Humedad 0% - Riesgo de marchitez en Bloque Este D. Riego urgente.",
+    "prioridad": "alta",
+    "fecha_alerta": "2025-12-19",
+    "atendida": true
+  },
+  {
+    "id_alerta": 1311,
+    "parcela_id": "P005",
+    "tipo_alerta": "humedad_critica",
+    "mensaje": "Humedad 0% - Riesgo de marchitez en Bloque Oeste E. Riego urgente.",
+    "prioridad": "alta",
+    "fecha_alerta": "2025-12-19",
+    "atendida": false
+  },
+  {
+    "id_alerta": 208,
+    "parcela_id": "P001",
+    "tipo_alerta": "humedad_critica",
+    "mensaje": "Humedad 0% - Riesgo de marchitez en Parcela Norte A. Riego urgente.",
+    "prioridad": "alta",
+    "fecha_alerta": "2025-12-18",
+    "atendida": false
+  },
+  {
+    "id_alerta": 524,
+    "parcela_id": "P002",
+    "tipo_alerta": "humedad_critica",
+    "mensaje": "Humedad 0% - Riesgo de marchitez en Parcela Sur B. Riego urgente.",
+    "prioridad": "alta",
+    "fecha_alerta": "2025-12-18",
+    "atendida": true
+  },
+  {
+    "id_alerta": 838,
+    "parcela_id": "P003",
+    "tipo_alerta": "humedad_critica",
+    "mensaje": "Humedad 0% - Riesgo de marchitez en Parcela Central C. Riego urgente.",
+    "prioridad": "alta",
+    "fecha_alerta": "2025-12-18",
+    "atendida": false
+  },
+  {
+    "id_alerta": 1117,
+    "parcela_id": "P004",
+    "tipo_alerta": "humedad_critica",
+    "mensaje": "Humedad 0% - Riesgo de marchitez en Bloque Este D. Riego urgente.",
+    "prioridad": "alta",
+    "fecha_alerta": "2025-12-18",
+    "atendida": true
+  },
+  {
+    "id_alerta": 1310,
+    "parcela_id": "P005",
+    "tipo_alerta": "humedad_critica",
+    "mensaje": "Humedad 0% - Riesgo de marchitez en Bloque Oeste E. Riego urgente.",
+    "prioridad": "alta",
+    "fecha_alerta": "2025-12-18",
+    "atendida": false
+  },
+  {
+    "id_alerta": 207,
+    "parcela_id": "P001",
+    "tipo_alerta": "humedad_critica",
+    "mensaje": "Humedad 0% - Riesgo de marchitez en Parcela Norte A. Riego urgente.",
+    "prioridad": "alta",
+    "fecha_alerta": "2025-12-17",
+    "atendida": true
+  },
+  {
+    "id_alerta": 523,
+    "parcela_id": "P002",
+    "tipo_alerta": "humedad_critica",
+    "mensaje": "Humedad 0% - Riesgo de marchitez en Parcela Sur B. Riego urgente.",
+    "prioridad": "alta",
+    "fecha_alerta": "2025-12-17",
+    "atendida": false
+  },
+  {
+    "id_alerta": 837,
+    "parcela_id": "P003",
+    "tipo_alerta": "humedad_critica",
+    "mensaje": "Humedad 0% - Riesgo de marchitez en Parcela Central C. Riego urgente.",
+    "prioridad": "alta",
+    "fecha_alerta": "2025-12-17",
+    "atendida": false
+  },
+  {
+    "id_alerta": 1116,
+    "parcela_id": "P004",
+    "tipo_alerta": "humedad_critica",
+    "mensaje": "Humedad 0% - Riesgo de marchitez en Bloque Este D. Riego urgente.",
+    "prioridad": "alta",
+    "fecha_alerta": "2025-12-17",
+    "atendida": false
+  },
+  {
+    "id_alerta": 1309,
+    "parcela_id": "P005",
+    "tipo_alerta": "humedad_critica",
+    "mensaje": "Humedad 0% - Riesgo de marchitez en Bloque Oeste E. Riego urgente.",
+    "prioridad": "alta",
+    "fecha_alerta": "2025-12-17",
+    "atendida": false
+  },
+  {
+    "id_alerta": 206,
+    "parcela_id": "P001",
+    "tipo_alerta": "humedad_critica",
+    "mensaje": "Humedad 0% - Riesgo de marchitez en Parcela Norte A. Riego urgente.",
+    "prioridad": "alta",
+    "fecha_alerta": "2025-12-16",
+    "atendida": false
+  },
+  {
+    "id_alerta": 522,
+    "parcela_id": "P002",
+    "tipo_alerta": "humedad_critica",
+    "mensaje": "Humedad 0% - Riesgo de marchitez en Parcela Sur B. Riego urgente.",
+    "prioridad": "alta",
+    "fecha_alerta": "2025-12-16",
+    "atendida": true
+  },
+  {
+    "id_alerta": 836,
+    "parcela_id": "P003",
+    "tipo_alerta": "humedad_critica",
+    "mensaje": "Humedad 0% - Riesgo de marchitez en Parcela Central C. Riego urgente.",
+    "prioridad": "alta",
+    "fecha_alerta": "2025-12-16",
+    "atendida": true
+  },
+  {
+    "id_alerta": 1115,
+    "parcela_id": "P004",
+    "tipo_alerta": "humedad_critica",
+    "mensaje": "Humedad 0% - Riesgo de marchitez en Bloque Este D. Riego urgente.",
+    "prioridad": "alta",
+    "fecha_alerta": "2025-12-16",
+    "atendida": true
+  },
+  {
+    "id_alerta": 1308,
+    "parcela_id": "P005",
+    "tipo_alerta": "humedad_critica",
+    "mensaje": "Humedad 0% - Riesgo de marchitez en Bloque Oeste E. Riego urgente.",
+    "prioridad": "alta",
+    "fecha_alerta": "2025-12-16",
+    "atendida": false
+  },
+  {
+    "id_alerta": 205,
+    "parcela_id": "P001",
+    "tipo_alerta": "humedad_critica",
+    "mensaje": "Humedad 0% - Riesgo de marchitez en Parcela Norte A. Riego urgente.",
+    "prioridad": "alta",
+    "fecha_alerta": "2025-12-15",
+    "atendida": false
+  },
+  {
+    "id_alerta": 521,
+    "parcela_id": "P002",
+    "tipo_alerta": "humedad_critica",
+    "mensaje": "Humedad 0% - Riesgo de marchitez en Parcela Sur B. Riego urgente.",
+    "prioridad": "alta",
+    "fecha_alerta": "2025-12-15",
+    "atendida": false
+  },
+  {
+    "id_alerta": 835,
+    "parcela_id": "P003",
+    "tipo_alerta": "humedad_critica",
+    "mensaje": "Humedad 0% - Riesgo de marchitez en Parcela Central C. Riego urgente.",
+    "prioridad": "alta",
+    "fecha_alerta": "2025-12-15",
+    "atendida": false
+  },
+  {
+    "id_alerta": 1114,
+    "parcela_id": "P004",
+    "tipo_alerta": "humedad_critica",
+    "mensaje": "Humedad 0% - Riesgo de marchitez en Bloque Este D. Riego urgente.",
+    "prioridad": "alta",
+    "fecha_alerta": "2025-12-15",
+    "atendida": true
+  },
+  {
+    "id_alerta": 1307,
+    "parcela_id": "P005",
+    "tipo_alerta": "humedad_critica",
+    "mensaje": "Humedad 0% - Riesgo de marchitez en Bloque Oeste E. Riego urgente.",
+    "prioridad": "alta",
+    "fecha_alerta": "2025-12-15",
+    "atendida": false
+  },
+  {
+    "id_alerta": 204,
+    "parcela_id": "P001",
+    "tipo_alerta": "humedad_critica",
+    "mensaje": "Humedad 0% - Riesgo de marchitez en Parcela Norte A. Riego urgente.",
+    "prioridad": "alta",
+    "fecha_alerta": "2025-12-14",
+    "atendida": false
+  },
+  {
+    "id_alerta": 520,
+    "parcela_id": "P002",
+    "tipo_alerta": "humedad_critica",
+    "mensaje": "Humedad 0% - Riesgo de marchitez en Parcela Sur B. Riego urgente.",
+    "prioridad": "alta",
+    "fecha_alerta": "2025-12-14",
+    "atendida": true
+  },
+  {
+    "id_alerta": 834,
+    "parcela_id": "P003",
+    "tipo_alerta": "humedad_critica",
+    "mensaje": "Humedad 0% - Riesgo de marchitez en Parcela Central C. Riego urgente.",
+    "prioridad": "alta",
+    "fecha_alerta": "2025-12-14",
+    "atendida": true
+  },
+  {
+    "id_alerta": 1113,
+    "parcela_id": "P004",
+    "tipo_alerta": "humedad_critica",
+    "mensaje": "Humedad 0% - Riesgo de marchitez en Bloque Este D. Riego urgente.",
+    "prioridad": "alta",
+    "fecha_alerta": "2025-12-14",
+    "atendida": false
+  },
+  {
+    "id_alerta": 1306,
+    "parcela_id": "P005",
+    "tipo_alerta": "humedad_critica",
+    "mensaje": "Humedad 0% - Riesgo de marchitez en Bloque Oeste E. Riego urgente.",
+    "prioridad": "alta",
+    "fecha_alerta": "2025-12-14",
+    "atendida": false
+  },
+  {
+    "id_alerta": 203,
+    "parcela_id": "P001",
+    "tipo_alerta": "humedad_critica",
+    "mensaje": "Humedad 0% - Riesgo de marchitez en Parcela Norte A. Riego urgente.",
+    "prioridad": "alta",
+    "fecha_alerta": "2025-12-13",
+    "atendida": true
+  },
+  {
+    "id_alerta": 519,
+    "parcela_id": "P002",
+    "tipo_alerta": "humedad_critica",
+    "mensaje": "Humedad 0% - Riesgo de marchitez en Parcela Sur B. Riego urgente.",
+    "prioridad": "alta",
+    "fecha_alerta": "2025-12-13",
+    "atendida": true
+  },
+  {
+    "id_alerta": 833,
+    "parcela_id": "P003",
+    "tipo_alerta": "humedad_critica",
+    "mensaje": "Humedad 0% - Riesgo de marchitez en Parcela Central C. Riego urgente.",
+    "prioridad": "alta",
+    "fecha_alerta": "2025-12-13",
+    "atendida": true
+  },
+  {
+    "id_alerta": 1112,
+    "parcela_id": "P004",
+    "tipo_alerta": "humedad_critica",
+    "mensaje": "Humedad 0% - Riesgo de marchitez en Bloque Este D. Riego urgente.",
+    "prioridad": "alta",
+    "fecha_alerta": "2025-12-13",
+    "atendida": false
+  },
+  {
+    "id_alerta": 1305,
+    "parcela_id": "P005",
+    "tipo_alerta": "humedad_critica",
+    "mensaje": "Humedad 0% - Riesgo de marchitez en Bloque Oeste E. Riego urgente.",
+    "prioridad": "alta",
+    "fecha_alerta": "2025-12-13",
+    "atendida": false
+  },
+  {
+    "id_alerta": 202,
+    "parcela_id": "P001",
+    "tipo_alerta": "humedad_critica",
+    "mensaje": "Humedad 0% - Riesgo de marchitez en Parcela Norte A. Riego urgente.",
+    "prioridad": "alta",
+    "fecha_alerta": "2025-12-12",
+    "atendida": true
+  },
+  {
+    "id_alerta": 518,
+    "parcela_id": "P002",
+    "tipo_alerta": "humedad_critica",
+    "mensaje": "Humedad 0% - Riesgo de marchitez en Parcela Sur B. Riego urgente.",
+    "prioridad": "alta",
+    "fecha_alerta": "2025-12-12",
+    "atendida": true
+  },
+  {
+    "id_alerta": 832,
+    "parcela_id": "P003",
+    "tipo_alerta": "humedad_critica",
+    "mensaje": "Humedad 0% - Riesgo de marchitez en Parcela Central C. Riego urgente.",
+    "prioridad": "alta",
+    "fecha_alerta": "2025-12-12",
+    "atendida": false
+  },
+  {
+    "id_alerta": 1111,
+    "parcela_id": "P004",
+    "tipo_alerta": "humedad_critica",
+    "mensaje": "Humedad 0% - Riesgo de marchitez en Bloque Este D. Riego urgente.",
+    "prioridad": "alta",
+    "fecha_alerta": "2025-12-12",
+    "atendida": true
+  },
+  {
+    "id_alerta": 1304,
+    "parcela_id": "P005",
+    "tipo_alerta": "humedad_critica",
+    "mensaje": "Humedad 0% - Riesgo de marchitez en Bloque Oeste E. Riego urgente.",
+    "prioridad": "alta",
+    "fecha_alerta": "2025-12-12",
+    "atendida": true
+  }
+]

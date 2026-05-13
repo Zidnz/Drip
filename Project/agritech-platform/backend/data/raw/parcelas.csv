@@ -1,0 +1,11 @@
+id_parcela,nombre_parcela,area_ha,cultivo_actual,tipo_suelo,sistema_riego,humedad_objetivo,estado_parcela,color_estado,fecha_siembra
+1,La Esperanza,19.06,1,arcilloso,goteo,65,activa,#22c55e,2025-10-16
+2,El Mezquite,18.94,3,franco,aspersion,70,activa,#22c55e,2025-11-13
+3,San Isidro,15.58,5,franco-arcilloso,goteo,72,activa,#22c55e,2025-10-03
+4,Los Nogales,7.03,2,arcilloso,goteo,60,activa,#22c55e,2025-11-02
+5,El Vergel,14.91,4,franco-arcilloso,goteo,75,activa,#22c55e,2025-11-15
+6,La Primavera,7.07,5,franco-arcilloso,microaspersion,72,activa,#22c55e,2025-11-07
+7,Los Almendros,19.45,3,limoso,goteo,70,activa,#22c55e,2025-10-11
+8,Santa Rosa,8.39,1,arenoso,gravedad,65,activa,#22c55e,2025-10-14
+9,El Palomar,4.13,2,limoso,goteo,60,activa,#22c55e,2025-10-07
+10,La Huerta Norte,15.89,4,limoso,gravedad,75,activa,#22c55e,2025-10-03

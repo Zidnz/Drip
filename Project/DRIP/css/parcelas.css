@@ -1,0 +1,203 @@
+/* ============================================
+   DRIP — parcelas.css
+   Cards de parcelas, detalle, indicadores
+   ============================================ */
+
+/* ── Parcela card ────────────────────────── */
+.parc-card {
+  background: var(--surface-1);
+  border-radius: var(--radius-lg);
+  padding: var(--space-4);
+  box-shadow: var(--shadow-sm);
+  cursor: pointer;
+  transition: transform var(--transition-base), box-shadow var(--transition-base);
+}
+
+.parc-card:active {
+  transform: scale(0.97);
+  box-shadow: var(--shadow-xs);
+}
+
+.parc-card__header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: var(--space-3);
+}
+
+.parc-card__icon {
+  width: 42px;
+  height: 42px;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-bottom: var(--space-2);
+}
+
+.parc-card__name {
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-semibold);
+  color: var(--text-dark);
+  margin-top: var(--space-1);
+}
+
+.parc-card__meta {
+  font-size: var(--font-size-xs);
+  color: var(--gray-soft);
+  margin-top: 2px;
+}
+
+/* ── Humidity bar ────────────────────────── */
+.hum-label-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+.hum-label-text {
+  font-size: var(--font-size-xs);
+  color: var(--gray-soft);
+}
+
+.hum-label-value {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-bold);
+}
+
+.hum-track {
+  height: 8px;
+  border-radius: var(--radius-full);
+  background: var(--beige-light);
+  position: relative;
+  overflow: visible;
+  margin-bottom: var(--space-1);
+}
+
+.hum-fill {
+  height: 100%;
+  border-radius: var(--radius-full);
+  transition: width 0.5s ease;
+  position: relative;
+}
+
+.hum-marker {
+  position: absolute;
+  top: -3px;
+  width: 2px;
+  height: 14px;
+  border-radius: var(--radius-full);
+  background: var(--blue-gray);
+}
+
+.hum-range {
+  display: flex;
+  justify-content: space-between;
+  font-size: 10px;
+  color: var(--gray-soft);
+  margin-top: 2px;
+}
+
+/* ── Parcela metrics grid ────────────────── */
+.parc-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-2);
+  margin-top: var(--space-3);
+}
+
+.pm-cell {
+  background: var(--background-main);
+  border-radius: var(--radius-md);
+  padding: var(--space-2) var(--space-2);
+  text-align: center;
+}
+
+.pm-cell__value {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-bold);
+  color: var(--text-dark);
+}
+
+.pm-cell__label {
+  font-size: 10px;
+  color: var(--gray-soft);
+  margin-top: 1px;
+}
+
+/* ── Last read timestamp ─────────────────── */
+.parc-card__timestamp {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: var(--font-size-xs);
+  color: var(--gray-soft);
+  margin-top: var(--space-3);
+}
+
+/* ── Detalle de parcela ──────────────────── */
+#parc-detalle {
+  margin-top: var(--space-5);
+  padding-top: var(--space-5);
+  border-top: 2px solid var(--beige-light);
+}
+
+.stat-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-3) 0;
+  border-bottom: 1px solid var(--beige-light);
+  font-size: var(--font-size-sm);
+}
+
+.stat-row:last-child { border-bottom: none; }
+.stat-lbl { color: var(--gray-soft); font-weight: var(--font-weight-medium); }
+.stat-val  { font-weight: var(--font-weight-semibold); color: var(--text-dark); }
+
+/* ── Sensor inline card ──────────────────── */
+.sensor-mini {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-3);
+  background: var(--surface-1);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-xs);
+}
+
+.sensor-mini__icon {
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-md);
+  background: rgba(124,156,168,0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.sensor-mini__readings {
+  display: flex;
+  gap: var(--space-4);
+  flex: 1;
+}
+
+.sensor-mini__reading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sensor-mini__reading-val {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-bold);
+  color: var(--text-dark);
+}
+
+.sensor-mini__reading-label {
+  font-size: 10px;
+  color: var(--gray-soft);
+}

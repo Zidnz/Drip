@@ -1,0 +1,78 @@
+/* ============================================
+   DRIP — responsive.css
+   Media queries — mobile-first
+   ============================================ */
+
+/* ── Base: 0 – 430px  (smartphone) ────────
+   El diseño BASE ya ES mobile-first.
+   Las reglas aquí ajustan en pantallas
+   mayores para mantener la estética
+   de app móvil centrada.
+   ────────────────────────────────────────── */
+
+/* ── 430px+ : tablet / desktop ─────────── */
+@media (min-width: 431px) {
+  body {
+    background-color: var(--beige-light);
+  }
+
+  #app {
+    box-shadow: var(--shadow-xl);
+    border-radius: var(--radius-xl);
+    margin-top: 24px;
+    margin-bottom: 24px;
+    min-height: calc(100vh - 48px);
+    overflow: hidden;
+  }
+
+  .nav-bottom {
+    border-radius: 0 0 var(--radius-xl) var(--radius-xl);
+  }
+}
+
+/* ── 768px+ ─────────────────────────────── */
+@media (min-width: 768px) {
+  body {
+    background: linear-gradient(135deg, var(--beige-light) 0%, var(--blue-light) 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  #app {
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+}
+
+/* ── KPI grid — adaptar en pantallas muy pequeñas ── */
+@media (max-width: 340px) {
+  .kpi-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .parc-metrics {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* ── Landscape móvil ────────────────────── */
+@media (max-height: 600px) and (orientation: landscape) {
+  .splash-screen__logo { width: 60px; height: 60px; }
+  .splash-screen__name { font-size: var(--font-size-xl); }
+  .dashboard-hero { padding: var(--space-3) var(--content-padding); }
+  .profile-hero   { padding: var(--space-5) var(--content-padding) var(--space-4); }
+}
+
+/* ── Safe area (iOS) ────────────────────── */
+@supports (padding-bottom: env(safe-area-inset-bottom)) {
+  .nav-bottom {
+    padding-bottom: calc(var(--space-2) + env(safe-area-inset-bottom));
+    height: calc(var(--nav-bottom-height) + env(safe-area-inset-bottom));
+  }
+
+  .screen {
+    padding-bottom: calc(var(--nav-bottom-height) + env(safe-area-inset-bottom) + var(--space-4));
+  }
+}

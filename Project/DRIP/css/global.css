@@ -1,0 +1,96 @@
+/* ============================================
+   DRIP — global.css
+   Body, tipografía, estilos base globales
+   ============================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+body {
+  font-family: var(--font-primary);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-regular);
+  color: var(--text-dark);
+  background-color: var(--background-main);
+  overflow-x: hidden;
+}
+
+/* ── App wrapper (mobile-first centering) ── */
+#app {
+  max-width: var(--app-max-width);
+  margin: 0 auto;
+  min-height: 100vh;
+  position: relative;
+  background-color: var(--background-main);
+  overflow: hidden;
+}
+
+/* ── Tipografía ─────────────────────────── */
+.text-xs      { font-size: var(--font-size-xs);   }
+.text-sm      { font-size: var(--font-size-sm);   }
+.text-base    { font-size: var(--font-size-base);  }
+.text-md      { font-size: var(--font-size-md);   }
+.text-lg      { font-size: var(--font-size-lg);   }
+.text-xl      { font-size: var(--font-size-xl);   }
+.text-2xl     { font-size: var(--font-size-2xl);  }
+
+.font-regular  { font-weight: var(--font-weight-regular);  }
+.font-medium   { font-weight: var(--font-weight-medium);   }
+.font-semibold { font-weight: var(--font-weight-semibold); }
+.font-bold     { font-weight: var(--font-weight-bold);     }
+
+.text-primary  { color: var(--green-primary); }
+.text-dark     { color: var(--text-dark);     }
+.text-gray     { color: var(--gray-soft);     }
+.text-white    { color: var(--color-white);   }
+.text-danger   { color: var(--color-danger);  }
+.text-warning  { color: var(--color-warning); }
+.text-center   { text-align: center;          }
+
+/* ── Page screens ───────────────────────── */
+.screen {
+  display: none;
+  width: 100%;
+  min-height: 100vh;
+  padding-bottom: calc(var(--nav-bottom-height) + var(--space-4));
+  animation: screenFadeIn 0.3s ease;
+}
+
+.screen.active {
+  display: block;
+}
+
+.screen.no-nav {
+  padding-bottom: 0;
+}
+
+@keyframes screenFadeIn {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0);   }
+}
+
+/* ── Utility ────────────────────────────── */
+.hidden        { display: none !important;    }
+.invisible     { visibility: hidden;          }
+.flex          { display: flex;               }
+.flex-col      { flex-direction: column;      }
+.items-center  { align-items: center;         }
+.justify-center{ justify-content: center;     }
+.justify-between{justify-content: space-between;}
+.gap-2         { gap: var(--space-2);         }
+.gap-3         { gap: var(--space-3);         }
+.gap-4         { gap: var(--space-4);         }
+.w-full        { width: 100%;                 }
+.h-full        { height: 100%;                }
+
+/* ── Scrollbars finas ───────────────────── */
+::-webkit-scrollbar            { width: 4px; height: 4px; }
+::-webkit-scrollbar-track      { background: transparent; }
+::-webkit-scrollbar-thumb      { background: var(--beige-light); border-radius: var(--radius-full); }
+::-webkit-scrollbar-thumb:hover{ background: var(--gray-soft); }
+
+/* ── Focus visible ──────────────────────── */
+:focus-visible {
+  outline: 2px solid var(--green-primary);
+  outline-offset: 2px;
+  border-radius: var(--radius-sm);
+}

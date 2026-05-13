@@ -1,0 +1,6 @@
+id_cultivo,nombre_comun,nombre_cientifico,kc_inicial,kc_medio,kc_final,ky_min,ky_max,ky_promedio,dias_etapa_inicial,dias_etapa_desarrollo,dias_etapa_media,dias_etapa_final,rendimiento_min,rendimiento_max,rendimiento_promedio
+1,Maíz,Zea mays,0.3,1.2,0.6,0.2,1.25,0.72,25,35,40,30,4.0,12.0,8.0
+2,Frijol,Phaseolus vulgaris,0.4,1.15,0.35,0.2,1.15,0.67,20,30,35,20,0.8,2.5,1.6
+3,Chile,Capsicum annuum,0.35,1.05,0.9,0.6,1.1,0.85,30,40,110,20,8.0,25.0,16.0
+4,Papa,Solanum tuberosum,0.5,1.15,0.75,0.4,1.1,0.75,25,30,45,30,15.0,40.0,27.0
+5,Jitomate,Solanum lycopersicum,0.6,1.15,0.8,0.4,1.05,0.72,30,40,45,25,30.0,90.0,60.0

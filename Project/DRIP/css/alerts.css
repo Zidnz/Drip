@@ -1,0 +1,212 @@
+/* ============================================
+   DRIP — alerts.css
+   Cards de alertas, prioridades, estados
+   ============================================ */
+
+/* ── Alert card ──────────────────────────── */
+.alert-card {
+  background: var(--surface-1);
+  border-radius: var(--radius-lg);
+  padding: var(--space-4) var(--space-4);
+  display: flex;
+  gap: var(--space-3);
+  align-items: flex-start;
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--transition-base);
+  border-left: 4px solid transparent;
+}
+
+.alert-card:active { transform: scale(0.98); }
+
+.alert-card.alta  {
+  border-left-color: var(--color-danger);
+  background: linear-gradient(90deg, rgba(212,91,58,0.04), var(--surface-1));
+}
+
+.alert-card.media {
+  border-left-color: var(--color-warning);
+  background: linear-gradient(90deg, rgba(232,168,56,0.04), var(--surface-1));
+}
+
+.alert-card.baja  {
+  border-left-color: var(--green-primary);
+  background: linear-gradient(90deg, rgba(123,155,53,0.04), var(--surface-1));
+}
+
+.alert-card.atendida {
+  opacity: 0.55;
+}
+
+/* ── Alert icon ──────────────────────────── */
+.alert-card__icon {
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.alert-card__icon svg {
+  width: 18px;
+  height: 18px;
+  fill: none;
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/* ── Alert body ──────────────────────────── */
+.alert-card__body {
+  flex: 1;
+  min-width: 0;
+}
+
+.alert-card__title {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+  color: var(--text-dark);
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+  margin-bottom: var(--space-1);
+  flex-wrap: wrap;
+}
+
+.alert-card__msg {
+  font-size: var(--font-size-xs);
+  color: var(--gray-soft);
+  line-height: var(--line-height-loose);
+  margin-bottom: var(--space-2);
+}
+
+.alert-card__footer {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  font-size: var(--font-size-xs);
+  color: var(--gray-soft);
+}
+
+.alert-card__atendida {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  color: var(--green-primary);
+  font-weight: var(--font-weight-medium);
+}
+
+/* ── Alert actions ───────────────────────── */
+.alert-card__actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: var(--space-2);
+  flex-shrink: 0;
+}
+
+/* ── Sensor card (sensores view) ─────────── */
+.sens-card {
+  background: var(--surface-1);
+  border-radius: var(--radius-lg);
+  padding: var(--space-4);
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--transition-fast);
+}
+
+.sens-card:active { transform: scale(0.98); }
+
+.sens-ic {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-md);
+  background: rgba(124,156,168,0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.sens-ic svg {
+  width: 20px;
+  height: 20px;
+  stroke: var(--blue-gray);
+  fill: none;
+  stroke-width: 1.8;
+}
+
+.sens-info { flex: 1; min-width: 0; }
+
+.sens-name {
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+  color: var(--text-dark);
+}
+
+.sens-meta {
+  font-size: var(--font-size-xs);
+  color: var(--gray-soft);
+  margin-top: 2px;
+}
+
+.sens-readings {
+  display: flex;
+  gap: var(--space-4);
+  margin-top: var(--space-2);
+  font-size: var(--font-size-xs);
+  color: var(--gray-soft);
+}
+
+.sens-readings strong {
+  color: var(--text-dark);
+  font-weight: var(--font-weight-semibold);
+}
+
+/* ── Battery bar ─────────────────────────── */
+.bat-bar {
+  width: 56px;
+  height: 5px;
+  border-radius: var(--radius-full);
+  background: var(--beige-light);
+  overflow: hidden;
+  margin-top: var(--space-1);
+}
+
+.bat-fill {
+  height: 100%;
+  border-radius: var(--radius-full);
+  transition: width 0.4s ease;
+}
+
+.sens-status {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: var(--space-1);
+  flex-shrink: 0;
+}
+
+.sens-status__label {
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-semibold);
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.sens-status__bat {
+  font-size: 10px;
+  color: var(--gray-soft);
+}
+
+.sens-status__time {
+  font-size: 10px;
+  color: var(--gray-soft);
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}

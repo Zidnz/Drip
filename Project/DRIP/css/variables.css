@@ -1,0 +1,93 @@
+/* ============================================
+   DRIP — variables.css
+   Design tokens: colores, tipografía, spacing
+   ============================================ */
+
+:root {
+  /* ── Paleta principal ─────────────────── */
+  --green-primary:  #9dc5da;
+  --green-dark:     #385E5E;
+  --green-soft:     #A8BE6D;
+  --blue-gray:      #7C9CA8;
+  --blue-light:     #C6D9E2;
+  --beige-light:    #EAE4DA;
+  --background-main:#F6F6F3;
+  --text-dark:      #2D2D2D;
+  --gray-soft:      #8A8A8A;
+
+  /* ── Estados / semántica ──────────────── */
+  --color-success:  #7B9B35;
+  --color-warning:  #E8A838;
+  --color-danger:   #D45B3A;
+  --color-info:     #7C9CA8;
+  --color-white:    #FFFFFF;
+
+  /* ── Superficie / glass ───────────────── */
+  --surface-1:      #FFFFFF;
+  --surface-2:      #F6F6F3;
+  --surface-3:      #EAE4DA;
+  --glass-bg:       rgba(255, 255, 255, 0.72);
+  --glass-border:   rgba(255, 255, 255, 0.45);
+  --glass-blur:     blur(14px);
+
+  /* ── Tipografía ───────────────────────── */
+  --font-primary:   'Inter', 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-size-xs:   11px;
+  --font-size-sm:   13px;
+  --font-size-base: 15px;
+  --font-size-md:   17px;
+  --font-size-lg:   20px;
+  --font-size-xl:   24px;
+  --font-size-2xl:  30px;
+  --font-size-3xl:  38px;
+
+  --font-weight-regular: 400;
+  --font-weight-medium:  500;
+  --font-weight-semibold:600;
+  --font-weight-bold:    700;
+
+  --line-height-tight:  1.2;
+  --line-height-base:   1.5;
+  --line-height-loose:  1.75;
+
+  /* ── Spacing (8pt grid) ───────────────── */
+  --space-1:   4px;
+  --space-2:   8px;
+  --space-3:   12px;
+  --space-4:   16px;
+  --space-5:   20px;
+  --space-6:   24px;
+  --space-7:   28px;
+  --space-8:   32px;
+  --space-10:  40px;
+  --space-12:  48px;
+  --space-16:  64px;
+
+  /* ── Border radius ────────────────────── */
+  --radius-sm:   8px;
+  --radius-md:   14px;
+  --radius-lg:   20px;
+  --radius-xl:   28px;
+  --radius-full: 999px;
+
+  /* ── Sombras ──────────────────────────── */
+  --shadow-xs:  0 1px 3px rgba(0,0,0,0.06);
+  --shadow-sm:  0 2px 8px rgba(0,0,0,0.08);
+  --shadow-md:  0 4px 16px rgba(0,0,0,0.10);
+  --shadow-lg:  0 8px 32px rgba(0,0,0,0.12);
+  --shadow-xl:  0 16px 48px rgba(0,0,0,0.15);
+  --shadow-green: 0 4px 20px rgba(123,155,53,0.25);
+
+  /* ── Transiciones ─────────────────────── */
+  --transition-fast:   150ms ease;
+  --transition-base:   250ms ease;
+  --transition-slow:   400ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-bounce: 350ms cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  /* ── Layout ───────────────────────────── */
+  --app-max-width:    430px;
+  --navbar-height:    68px;
+  --topbar-height:    60px;
+  --nav-bottom-height:72px;
+  --content-padding:  var(--space-5);
+}

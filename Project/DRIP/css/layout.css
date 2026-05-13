@@ -1,0 +1,222 @@
+/* ============================================
+   DRIP — layout.css
+   Grids, flex layouts, topbar, nav inferior
+   ============================================ */
+
+/* ── Top Bar ─────────────────────────────── */
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: var(--topbar-height);
+  padding: 0 var(--content-padding);
+  background: var(--glass-bg);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border-bottom: 1px solid var(--glass-border);
+}
+
+.topbar__logo {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.topbar__logo-img {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+  border-radius: var(--radius-sm);
+}
+
+.topbar__brand {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+  color: var(--green-primary);
+  letter-spacing: -0.5px;
+}
+
+.topbar__actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.topbar__icon-btn {
+  width: 38px;
+  height: 38px;
+  border-radius: var(--radius-full);
+  background: var(--surface-1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-xs);
+  transition: background var(--transition-fast), transform var(--transition-fast);
+  position: relative;
+}
+
+.topbar__icon-btn:active {
+  transform: scale(0.92);
+}
+
+.topbar__avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-full);
+  background: var(--green-soft);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-white);
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.topbar__avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ── Bottom Navigation ────────────────────── */
+.nav-bottom {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: var(--app-max-width);
+  height: var(--nav-bottom-height);
+  background: var(--glass-bg);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border-top: 1px solid var(--glass-border);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 var(--space-2);
+  z-index: 200;
+  box-shadow: 0 -4px 20px rgba(0,0,0,0.07);
+}
+
+.nav-bottom__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  padding: var(--space-2) var(--space-3);
+  border-radius: var(--radius-md);
+  transition: all var(--transition-base);
+  cursor: pointer;
+  min-width: 56px;
+  position: relative;
+}
+
+.nav-bottom__item:active {
+  transform: scale(0.9);
+}
+
+.nav-bottom__icon {
+  width: 22px;
+  height: 22px;
+  stroke: var(--gray-soft);
+  transition: stroke var(--transition-base);
+  fill: none;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.nav-bottom__label {
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-medium);
+  color: var(--gray-soft);
+  transition: color var(--transition-base);
+  white-space: nowrap;
+}
+
+.nav-bottom__item.active .nav-bottom__icon {
+  stroke: var(--green-primary);
+}
+
+.nav-bottom__item.active .nav-bottom__label {
+  color: var(--green-primary);
+  font-weight: var(--font-weight-semibold);
+}
+
+.nav-bottom__item.active::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 24px;
+  height: 3px;
+  background: var(--green-primary);
+  border-radius: 0 0 var(--radius-sm) var(--radius-sm);
+}
+
+/* ── Page content container ──────────────── */
+.page-content {
+  padding: var(--space-5) var(--content-padding);
+}
+
+/* ── Section headers ─────────────────────── */
+.section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-4);
+}
+
+.section-title {
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-semibold);
+  color: var(--text-dark);
+}
+
+.section-link {
+  font-size: var(--font-size-sm);
+  color: var(--green-primary);
+  font-weight: var(--font-weight-medium);
+  cursor: pointer;
+}
+
+/* ── Grids ───────────────────────────────── */
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-3);
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-3);
+}
+
+/* ── Horizontal scroll row ───────────────── */
+.scroll-row {
+  display: flex;
+  gap: var(--space-3);
+  overflow-x: auto;
+  padding-bottom: var(--space-2);
+  scrollbar-width: none;
+}
+
+.scroll-row::-webkit-scrollbar {
+  display: none;
+}
+
+/* ── Stack ───────────────────────────────── */
+.stack {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}

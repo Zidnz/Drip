@@ -1,0 +1,4 @@
+# AgriTech Platform — Data Generator Dependencies
+# Solo librería estándar de Python + estas:
+numpy>=1.26.0
+pandas>=2.1.0

@@ -1,0 +1,224 @@
+/* ============================================
+   DRIP — profile.css
+   Pantalla de perfil, configuración, login
+   ============================================ */
+
+/* ── Login screen ────────────────────────── */
+.login-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  padding: var(--space-8) var(--content-padding);
+  background: var(--background-main);
+}
+
+.login-screen__brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: var(--space-10);
+}
+
+.login-screen__logo {
+  width: 72px;
+  height: 72px;
+  border-radius: var(--radius-xl);
+  object-fit: cover;
+  box-shadow: var(--shadow-green);
+  margin-bottom: var(--space-4);
+}
+
+.login-screen__title {
+  font-size: var(--font-size-2xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--green-primary);
+  letter-spacing: -1px;
+}
+
+.login-screen__subtitle {
+  font-size: var(--font-size-sm);
+  color: var(--gray-soft);
+  margin-top: var(--space-1);
+}
+
+.login-screen__form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.login-screen__footer {
+  margin-top: var(--space-6);
+  text-align: center;
+  font-size: var(--font-size-xs);
+  color: var(--gray-soft);
+}
+
+/* ── Splash screen ───────────────────────── */
+.splash-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: linear-gradient(160deg, var(--green-primary) 0%, var(--green-dark) 100%);
+  color: var(--color-white);
+  gap: var(--space-6);
+}
+
+.splash-screen__logo {
+  width: 90px;
+  height: 90px;
+  border-radius: var(--radius-xl);
+  object-fit: cover;
+  box-shadow: 0 8px 40px rgba(0,0,0,0.25);
+  animation: splashLogoIn 0.6s var(--transition-bounce) both;
+}
+
+@keyframes splashLogoIn {
+  from { opacity: 0; transform: scale(0.6) translateY(20px); }
+  to   { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+.splash-screen__name {
+  font-size: var(--font-size-3xl);
+  font-weight: var(--font-weight-bold);
+  letter-spacing: -2px;
+  animation: splashTextIn 0.6s 0.2s ease both;
+}
+
+.splash-screen__tagline {
+  font-size: var(--font-size-sm);
+  opacity: 0.75;
+  animation: splashTextIn 0.6s 0.35s ease both;
+}
+
+@keyframes splashTextIn {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.splash-screen__loader {
+  width: 40px;
+  height: 4px;
+  background: rgba(255,255,255,0.25);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+  animation: splashTextIn 0.4s 0.5s ease both;
+}
+
+.splash-screen__loader-fill {
+  height: 100%;
+  width: 0%;
+  background: var(--color-white);
+  border-radius: var(--radius-full);
+  animation: splashLoad 1.8s 0.6s ease forwards;
+}
+
+@keyframes splashLoad {
+  0%   { width: 0%; }
+  60%  { width: 75%; }
+  100% { width: 100%; }
+}
+
+/* ── Profile hero ────────────────────────── */
+.profile-hero {
+  background: linear-gradient(160deg, var(--green-primary) 0%, var(--green-dark) 100%);
+  padding: var(--space-8) var(--content-padding) var(--space-6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: var(--color-white);
+}
+
+.profile-hero__avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: var(--radius-full);
+  background: rgba(255,255,255,0.2);
+  border: 3px solid rgba(255,255,255,0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-white);
+  margin-bottom: var(--space-3);
+  overflow: hidden;
+}
+
+.profile-hero__name {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-bold);
+  margin-bottom: 2px;
+}
+
+.profile-hero__role {
+  font-size: var(--font-size-sm);
+  opacity: 0.78;
+}
+
+/* ── Profile sections ────────────────────── */
+.profile-section {
+  margin: var(--space-5) var(--content-padding) 0;
+}
+
+.profile-section__title {
+  font-size: var(--font-size-xs);
+  font-weight: var(--font-weight-semibold);
+  color: var(--gray-soft);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: var(--space-3);
+}
+
+.profile-row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-4);
+  background: var(--surface-1);
+  border-radius: var(--radius-lg);
+  margin-bottom: var(--space-2);
+  box-shadow: var(--shadow-xs);
+  cursor: pointer;
+  transition: transform var(--transition-fast);
+}
+
+.profile-row:active { transform: scale(0.98); }
+
+.profile-row__icon {
+  width: 38px;
+  height: 38px;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.profile-row__label {
+  flex: 1;
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  color: var(--text-dark);
+}
+
+.profile-row__value {
+  font-size: var(--font-size-sm);
+  color: var(--gray-soft);
+}
+
+.profile-row__chevron {
+  width: 16px;
+  height: 16px;
+  stroke: var(--gray-soft);
+  fill: none;
+  stroke-width: 2;
+}
+
+.profile-row--danger .profile-row__label {
+  color: var(--color-danger);
+}
