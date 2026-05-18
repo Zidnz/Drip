@@ -1,0 +1,71 @@
+:root {
+  --green-primary:  #9dc5da;
+  --green-dark:     #385E5E;
+  --green-soft:     #A8BE6D;
+  --blue-gray:      #7C9CA8;
+  --blue-light:     #C6D9E2;
+  --beige-light:    #EAE4DA;
+  --background-main:#F6F6F3;
+  --text-dark:      #2D2D2D;
+  --gray-soft:      #8A8A8A;
+
+  --color-success:  #7B9B35;
+  --color-warning:  #E8A838;
+  --color-danger:   #D45B3A;
+  --color-info:     #7C9CA8;
+  --color-white:    #FFFFFF;
+  --surface-1: #FFFFFF;
+  --surface-2: #F6F6F3;
+  --surface-3: #EAE4DA;
+  --glass-bg: rgba(255, 255, 255, 0.72);
+  --glass-border: rgba(255, 255, 255, 0.45);
+  --glass-blur: blur(14px);
+
+  --font-base: "Manrope", "Segoe UI", sans-serif;
+  --font-mono: "Space Mono", "Consolas", monospace;
+
+  --text-xs: clamp(0.8rem, 0.76rem + 0.2vw, 0.9rem);
+  --text-sm: clamp(0.92rem, 0.88rem + 0.24vw, 1rem);
+  --text-md: clamp(1rem, 0.96rem + 0.26vw, 1.1rem);
+  --text-lg: clamp(1.2rem, 1.1rem + 0.5vw, 1.4rem);
+  --text-xl: clamp(1.5rem, 1.3rem + 0.9vw, 1.95rem);
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: clamp(14px, 12px + 0.6vw, 18px);
+  --space-5: clamp(18px, 14px + 1vw, 22px);
+  --space-6: clamp(22px, 18px + 1vw, 26px);
+  --space-7: clamp(26px, 22px + 1.2vw, 32px);
+
+  --radius-sm: 12px;
+  --radius-md: 18px;
+  --radius-lg: 26px;
+  --radius-xl: 32px;
+
+  --shadow-sm: 0 8px 18px rgba(56, 94, 94, 0.08);
+  --shadow-md: 0 16px 36px rgba(56, 94, 94, 0.12);
+  --shadow-lg: 0 24px 48px rgba(56, 94, 94, 0.16);
+
+  --z-header: 100;
+  --z-nav: 120;
+
+  --transition-fast: 160ms ease;
+  --transition-base: 240ms ease;
+
+  --bp-mobile: 480px;
+  --bp-tablet: 768px;
+  --bp-desktop: 1200px;
+
+  --app-max-width: 100%;
+  --content-max-width: 1600px;
+  --app-side-padding: clamp(14px, 2.8vw, 40px);
+  --app-bottom-space: clamp(18px, 2.2vw, 28px);
+  --nav-height: 68px;
+  --nav-sticky-offset: clamp(10px, 2vw, 16px);
+  --module-max-width: 100%;
+
+  --surface-main: var(--surface-1);
+  --surface-soft: var(--surface-3);
+  --border-soft: rgba(124, 156, 168, 0.25);
+}

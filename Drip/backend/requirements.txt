@@ -1,0 +1,28 @@
+# requirements.txt — Dependencias del proyecto
+# Instalar con: pip install -r requirements.txt
+
+# Manipulación de datos
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Machine Learning
+scikit-learn>=1.3.0
+
+# Dashboard web interactivo
+streamlit>=1.28.0
+
+# Gráficas interactivas para el dashboard
+plotly>=5.17.0
+
+# Llamadas HTTP (NASA POWER API)
+requests>=2.31.0
+
+# Base de datos (sqlite3 ya viene con Python, SQLAlchemy es opcional)
+# sqlalchemy>=2.0.0  # Descomenta si quieres usar ORM
+
+# Utilidades
+python-dateutil>=2.8.0
+
+# API REST (reemplaza/complementa Streamlit como capa de presentación)
+fastapi>=0.111.0
+uvicorn[standard]>=0.29.0

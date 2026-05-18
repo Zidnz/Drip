@@ -1,0 +1,380 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DRIP | Mobile Dashboard</title>
+  <link rel="icon" type="image/jpeg" href="assets/drip-logo.jpeg" />
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+  <main class="app-shell">
+        <header class="topbar">
+      <div class="topbar-main">
+        <div class="brand-wrap">
+          <img class="brand-logo" src="assets/drip-logo.jpeg" alt="Logo DRIP" />
+          <h1 class="brand">DRIP</h1>
+        </div>
+        <div class="topbar-actions">
+          <button class="icon-btn" type="button" aria-label="Notificaciones">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"></path>
+              <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+            </svg>
+          </button>
+          <div class="user-pill">D</div>
+        </div>
+      </div>
+      <div class="topbar-meta">
+        <p class="context" id="context-line">Parcela activa</p>
+        <div class="topbar-right">
+          <div class="clock" id="clock">--</div>
+          <div class="weather" id="weather-chip">
+            <span class="icon">ET0</span>
+            <span id="weather-text">Clima</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section id="tab-inicio" class="tab-panel active">
+      <section class="control-row card">
+        <label for="parcela-select">Parcela activa</label>
+        <div class="control-actions">
+          <span class="control-icon" aria-hidden="true">â—‰</span>
+          <select id="parcela-select"></select>
+          <button id="btn-refresh" type="button">Actualizar</button>
+        </div>
+        <div id="status" class="status">Cargando parcelas...</div>
+        <div id="error" class="error"></div>
+      </section>
+
+      <div class="kpi-grid">
+        <article class="kpi card">
+          <div class="kpi-head">
+            <span class="kpi-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2s6 6.1 6 11a6 6 0 0 1-12 0c0-4.9 6-11 6-11z"></path>
+                <path d="M9.5 14.5a2.5 2.5 0 0 0 5 0"></path>
+              </svg>
+            </span>
+            <span class="kpi-badge kpi-badge-ok">Hidrico</span>
+          </div>
+          <h3>Humedad</h3>
+          <p id="kpi-humedad" class="kpi-value">--%</p>
+          <small id="kpi-humedad-sub">--</small>
+        </article>
+        <article class="kpi card">
+          <div class="kpi-head">
+            <span class="kpi-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 14a4 4 0 1 1 6.9 2.7A5 5 0 0 0 14 20h-4a5 5 0 0 0-1.9-3.3A4 4 0 0 1 9 14z"></path>
+                <path d="M10 20h4"></path>
+              </svg>
+            </span>
+            <span class="kpi-badge kpi-badge-info">Suelo</span>
+          </div>
+          <h3>Temperatura</h3>
+          <p id="kpi-temp" class="kpi-value">-- C</p>
+          <small id="kpi-temp-sub">--</small>
+        </article>
+        <article class="kpi card">
+          <div class="kpi-head">
+            <span class="kpi-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="5" y="6" width="14" height="12" rx="3"></rect>
+                <path d="M9 12h6"></path>
+                <path d="M12 9v6"></path>
+              </svg>
+            </span>
+            <span class="kpi-badge kpi-badge-warn">Motor IA</span>
+          </div>
+          <h3>Decision IA</h3>
+          <p id="kpi-decision" class="kpi-value">--</p>
+          <small id="kpi-decision-sub">--</small>
+        </article>
+        <article class="kpi card">
+          <div class="kpi-head">
+            <span class="kpi-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2l3 6 7 .9-5 4.7 1.3 7.1L12 17.9 5.7 20.7 7 13.6 2 8.9 9 8z"></path>
+              </svg>
+            </span>
+            <span class="kpi-badge kpi-badge-neutral">Modelo</span>
+          </div>
+          <h3>Confianza IA</h3>
+          <p id="kpi-confianza" class="kpi-value">--%</p>
+          <small id="kpi-confianza-sub">--</small>
+        </article>
+      </div>
+
+      <article class="hero-reco card">
+        <div class="hero-glow" aria-hidden="true"></div>
+        <div class="hero-copy">
+          <p class="hero-kicker">Recomendacion inteligente</p>
+          <h2 class="hero-title" id="hero-lamina">Lamina recomendada -- mm</h2>
+          <p class="hero-meta"><span id="hero-duracion">Duracion estimada -- min</span> Â· <span id="hero-cultivo">Lote activo</span></p>
+        </div>
+        <button id="btn-go-ai" class="cta hero-cta">Ver recomendacion</button>
+      </article>
+
+      <article class="card chart-card">
+        <div class="section-title-row">
+          <h2>Comportamiento 24 horas</h2>
+          <span class="chart-chip">Rango optimo 60%-80%</span>
+        </div>
+        <div id="chart-24h" class="mini-chart"></div>
+      </article>
+    </section>
+
+    <section id="tab-sensores" class="tab-panel">
+      <article class="card sensors-hero">
+        <div>
+          <p class="sensors-kicker">Sensores IoT</p>
+          <h2 class="sensors-title">Monitoreo en tiempo real de tu cultivo</h2>
+        </div>
+        <div class="sensors-iot-wrap">
+          <img class="sensors-iot-image" src="assets/sensores.png" alt="Dispositivo IoT DRIP" />
+        </div>
+      </article>
+
+      <div class="toggle-row card">
+        <button id="toggle-humedad" class="toggle active" type="button">Humedad</button>
+        <button id="toggle-temperatura" class="toggle" type="button">Temperatura</button>
+      </div>
+
+      <div class="sensors-top-grid">
+        <article class="card sensor-bars-card">
+          <div class="section-title-row">
+            <h2>Humedad por sensor</h2>
+            <span class="chart-chip">Optimo / Atencion / Critico</span>
+          </div>
+          <div id="sensor-bars" class="sensor-bars"></div>
+        </article>
+
+        <article class="card sensor-layout">
+          <h2>Estado de sensores</h2>
+          <div id="sensor-donut" class="donut"></div>
+          <ul id="sensor-state-legend" class="legend"></ul>
+        </article>
+      </div>
+
+      <article class="sensors-summary">
+        <div class="sensor-kpi sensor-kpi-ok"><span>Optimo</span><strong id="sensor-kpi-optimo">0</strong></div>
+        <div class="sensor-kpi sensor-kpi-warn"><span>Atencion</span><strong id="sensor-kpi-atencion">0</strong></div>
+        <div class="sensor-kpi sensor-kpi-crit"><span>Critico</span><strong id="sensor-kpi-critico">0</strong></div>
+      </article>
+
+      <article class="card">
+        <div class="section-title-row">
+          <h2>Red de sensores - nodo por nodo</h2>
+        </div>
+        <div id="sensor-nodes" class="sensor-nodes"></div>
+      </article>
+    </section>
+
+    <section id="tab-ia" class="tab-panel">
+      <section class="ia-screen">
+        <article class="ia-hero card">
+          <img class="ia-hero-plant" src="assets/planta-ia.png" alt="" aria-hidden="true" />
+          <div class="ia-hero-copy">
+            <span class="ia-chip">Estado IA</span>
+            <h2 id="ia-estado" class="ia-main">--</h2>
+            <p class="ia-subline">No se requiere riego inmediato</p>
+            <p class="ia-condition"><span class="ia-dot"></span>Condicion optima</p>
+            <div class="ia-divider"></div>
+            <div class="ia-hero-metrics">
+              <div>
+                <span class="ia-metric-label">Lamina sugerida</span>
+                <span id="ia-lamina" class="ia-metric-value">Lamina: -- mm</span>
+              </div>
+              <div>
+                <span class="ia-metric-label">Volumen sugerido</span>
+                <span id="ia-volumen" class="ia-metric-value">Volumen: -- m3</span>
+              </div>
+            </div>
+          </div>
+          <div class="ia-hero-gauge-wrap">
+            <div class="ia-hero-leaf" aria-hidden="true"></div>
+            <div class="ia-hero-gauge">
+              <div class="ia-ring">
+                <span id="ia-confianza-main" class="ia-confianza-main">--%</span>
+              </div>
+              <p class="ia-gauge-title">Confianza IA</p>
+              <p id="ia-confianza-level" class="ia-gauge-level">Muy alta</p>
+            </div>
+          </div>
+        </article>
+
+        <section class="ia-mini-grid">
+          <article class="ia-mini-card">
+            <div class="ia-mini-icon">o</div>
+            <p class="ia-mini-title">Humedad actual</p>
+            <p id="ia-mini-humedad" class="ia-mini-value">--%</p>
+            <p class="ia-mini-status">Optima</p>
+          </article>
+          <article class="ia-mini-card">
+            <div class="ia-mini-icon">o</div>
+            <p class="ia-mini-title">ET0</p>
+            <p id="ia-mini-et0" class="ia-mini-value">-- mm</p>
+            <p class="ia-mini-status">Moderado</p>
+          </article>
+          <article class="ia-mini-card">
+            <div class="ia-mini-icon">o</div>
+            <p class="ia-mini-title">Deficit estimado</p>
+            <p id="ia-mini-deficit" class="ia-mini-value">-- mm</p>
+            <p class="ia-mini-status">Sin deficit</p>
+          </article>
+          <article class="ia-mini-card">
+            <div class="ia-mini-icon">o</div>
+            <p class="ia-mini-title">Sensores validos</p>
+            <p id="ia-mini-sensores" class="ia-mini-value">-- / --</p>
+            <p class="ia-mini-status">Operativos</p>
+          </article>
+          <article class="ia-mini-card">
+            <div class="ia-mini-icon">o</div>
+            <p class="ia-mini-title">Temperatura</p>
+            <p id="ia-mini-temp" class="ia-mini-value">-- C</p>
+            <p class="ia-mini-status">Ambiente</p>
+          </article>
+          <article class="ia-mini-card">
+            <div class="ia-mini-icon">o</div>
+            <p class="ia-mini-title">Riesgo operativo</p>
+            <p id="ia-mini-riesgo" class="ia-mini-value">--</p>
+            <p class="ia-mini-status">Condicion estable</p>
+          </article>
+        </section>
+
+        <article class="ia-insights card">
+          <div class="ia-insight-head">
+            <h3>Explicacion IA</h3>
+          </div>
+          <div id="ia-explicacion" class="ia-insight-list"></div>
+        </article>
+
+        <section class="ia-charts-grid">
+          <article class="card ia-chart-main">
+            <div class="ia-chart-title-row">
+              <h3>Proyeccion de humedad (7 dias)</h3>
+              <span class="ia-info-dot">i</span>
+            </div>
+            <div id="chart-7d" class="mini-chart ia-chart"></div>
+          </article>
+
+          <article class="card ia-risk-card">
+            <h3>Nivel de riesgo</h3>
+            <div class="ia-risk-gauge">
+              <div class="ia-risk-arc"></div>
+              <div class="ia-risk-needle"></div>
+            </div>
+            <p id="ia-risk-label" class="ia-risk-label">Bajo</p>
+            <p class="ia-risk-sub">Riesgo de deficit hidrico</p>
+          </article>
+        </section>
+
+        <article class="card ia-confidence-bar-card">
+          <div class="ia-confidence-row">
+            <h3>Confianza IA</h3>
+            <span id="ia-confianza-inline" class="ia-confidence-inline">--%</span>
+          </div>
+          <div class="ia-confidence-track">
+            <div id="ia-confidence-fill" class="ia-confidence-fill"></div>
+          </div>
+        </article>
+
+        <article class="ia-cta card">
+          <div class="ia-cta-copy">
+            <p class="ia-cta-label">Proxima evaluacion recomendada</p>
+            <p class="ia-cta-date">17 may 2026 · 6:00 a.m.</p>
+          </div>
+          <button class="ia-cta-btn" type="button">Ver recomendacion</button>
+        </article>
+      </section>
+    </section>
+
+    <section id="tab-parcelas" class="tab-panel">
+      <article class="card">
+        <h2>Comparativa horizontal</h2>
+        <div id="parcelas-comparativa" class="ranking"></div>
+      </article>
+
+      <article class="card">
+        <h2>Ranking por humedad</h2>
+        <div id="parcelas-ranking" class="ranking"></div>
+      </article>
+
+      <article class="card">
+        <h2>Radar multidimensional</h2>
+        <div id="parcelas-radar" class="radar"></div>
+      </article>
+    </section>
+
+    <section id="tab-alertas" class="tab-panel">
+      <article class="card">
+        <div class="filter-row" id="alert-filter-row">
+          <button class="chip active" data-filter="todas" type="button">Todas</button>
+          <button class="chip" data-filter="critica" type="button">Criticas</button>
+          <button class="chip" data-filter="advertencia" type="button">Advertencias</button>
+          <button class="chip" data-filter="informacion" type="button">Informacion</button>
+        </div>
+      </article>
+      <div id="alert-list" class="alert-list"></div>
+    </section>
+
+    <nav class="bottom-nav" aria-label="Navegacion principal">
+      <button class="nav-item active" data-tab="inicio" type="button" aria-label="Inicio">
+        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M3 10.5 12 3l9 7.5"></path>
+          <path d="M5 9.5V21h14V9.5"></path>
+        </svg>
+        <span class="nav-label">Inicio</span>
+      </button>
+      <button class="nav-item" data-tab="sensores" type="button" aria-label="Sensores">
+        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="2"></circle>
+          <path d="M16.24 7.76a6 6 0 0 1 0 8.49"></path>
+          <path d="M7.76 16.24a6 6 0 0 1 0-8.49"></path>
+          <path d="M19.07 4.93a10 10 0 0 1 0 14.14"></path>
+          <path d="M4.93 19.07a10 10 0 0 1 0-14.14"></path>
+        </svg>
+        <span class="nav-label">Sensores</span>
+      </button>
+      <button class="nav-item" data-tab="ia" type="button" aria-label="IA Recomendacion">
+        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 2v4"></path>
+          <path d="M12 18v4"></path>
+          <path d="M4.93 4.93l2.83 2.83"></path>
+          <path d="M16.24 16.24l2.83 2.83"></path>
+          <path d="M2 12h4"></path>
+          <path d="M18 12h4"></path>
+          <path d="M4.93 19.07l2.83-2.83"></path>
+          <path d="M16.24 7.76l2.83-2.83"></path>
+          <circle cx="12" cy="12" r="4"></circle>
+        </svg>
+        <span class="nav-label">IA / Recomendacion</span>
+      </button>
+      <button class="nav-item" data-tab="parcelas" type="button" aria-label="Parcelas">
+        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M2 20h20"></path>
+          <path d="M4 20v-7l4-3 4 3 4-3 4 3v7"></path>
+          <path d="M8 10V6h8v4"></path>
+        </svg>
+        <span class="nav-label">Parcelas</span>
+      </button>
+      <button class="nav-item" data-tab="alertas" type="button" aria-label="Alertas">
+        <span class="nav-badge">3</span>
+        <svg class="nav-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+          <path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+        </svg>
+        <span class="nav-label">Alertas</span>
+      </button>
+    </nav>
+  </main>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
+
+
